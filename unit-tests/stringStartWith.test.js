@@ -9,17 +9,17 @@ function doesStringStartWith(str, char) {
 test("test for the first letter of the string", () => {
   let expected = true;
   let result = doesStringStartWith("John","J");
-  expect(expected).toBe(result);
+  expect(result).toBe(expected);
 });
 
 test("test the first letter of the string with a different type", () => {
   let expected = false;
   let result = doesStringStartWith("John","j");
-  expect(expected).toBe(result);
+  expect(result).toBe(expected);
 });
 
 test("test the first letter of the string with a different letter", () => {
   let expected = false;
   let result = doesStringStartWith("John","K");
-  expect(expected).toBe(result);
+  expect(result).toBe(expected);
 });
